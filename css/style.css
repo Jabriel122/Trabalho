@@ -2,8 +2,13 @@
 
 /* TITILLIUM WEB */
 @font-face {
-    font-family: TitilliumWeb-Black;
-    src: url(../assets/fonts/Titillium_Web/TitilliumWeb-Black.ttf);
+    font-family: Paulo-black;
+    src: url(../assets/fonts/titillium_web/Titillium_Web/TitilliumWeb-Black.ttf);
+}
+
+@font-face {
+    font-family: Paulo-semibold;
+    src: url(../assets/fonts/titillium_web/Titillium_Web/TitilliumWeb-SemiBold.ttf);
 }
 
 /* INTER */
@@ -45,15 +50,13 @@ body {
     align-items: center;
 }
 
-/* Mobile First */
+/******************Mobile First******************/
 @media screen and (max-width: 675px) {
 
     /* HEADER */
     header {
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 20;
+        position: sticky;
+        z-index: 1000;
         width: 100vw;
         height: 60px;
         background-color: #1B1426;
@@ -62,7 +65,6 @@ body {
 
     /* Header Top */
     header .header-top {
-        /* border: #F9AA01 solid 2px */
         display: none;
     }
 
@@ -154,16 +156,183 @@ body {
         transition: right 0.4s;
     }
 
+    /* Main */
+
+    .banner {
+        width: 100%;
+        height: 606px;
+        background-color: rebeccapurple;
+        background-image: url(../assets/images/Banner.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+   }
+   .banner .mediador{
+    /* border: #6200ff 2px solid; */
+
+    padding-top:40px ;
+    padding-bottom: 90px;
+
+    display: flex;
+    justify-content:space-between;
+    flex-direction: column;
+    align-items: center;
+    
+   }
+
+   main .banner .mediador h1{
+    color: #ffffff;
+    /* font-weight: black; */
+    font-size: 40px;
+    font-family: "Paulo-black";
+    text-shadow: 0px 0px 7px #FD4255;
+    text-decoration:dashed;
+
+   }
+
+   main .banner .botao-sobre{
+    width: 171px;
+    height: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #1B1426;
+    font-size: 24px;
+    font-family: "Paulo-semibold";
+    text-decoration: none;
+
+    background-color: #F9AA01;
+    border-radius: 8px;
+   }
+
+   /* **Aba jogos** */
+
+   main .jogos{
+    background-color: #1B1426;
+
+    /* display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 44px; */
+
+    /* padding-top: 44px;
+    padding-bottom: 125px; */
+   }
+
+   main .jogos .jogos-flex{
+    
+    padding-top: 44px;
+    padding-bottom: 125px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 44px;
+   }
+
+   /* **Aba Mais sobre** */
+
+   main .time{
+    background-color: #F9AA01;
+   }
+
+   main .time .time-flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+   }
+
+   main .time .time-flex h1{
+    color: #1B1426;
+    font-family: Paulo-black;
+    font-size: 18px;
+    text-transform: uppercase;
+    
+
+    border-bottom: #1B1426 solid 1px;
+    padding-bottom: 40px;
+    padding-top: 82px;
+   }
+
+   main .time-flex .jogos-killjoy{
+    border: #FD4255 solid 2px;
+    padding-top: 127px;
+   }
+
+   /* Acrescentando um Linder-grid dos tanto tanto  */
+   main .time-flex .jogos-killjoy .border-grid{
+    background:linear-gradient(to right bottom, rgba(255,255,255,30%), rgba(27,20,28,0%)) ;
+    /* backdrop-filter: blur(50px); */
+    padding: 1px;
+    border-radius: 8px;
+    height: 300px;
+    width: 231px;
+
+    position: relative;
+    right: -80px;
+    top: -400px;
+   }
+
+   main .time-flex .jogos-killjoy .border-grid .background-color{
+    background:linear-gradient(to right bottom, rgba(122,49,236, 20%), rgba(47,7,109,83%));
+    border-radius: 8px;
+    height: 300px;
+    width: 231px;
+   }
+
+   main .time-flex .jogos-killjoy .border-grid .jogos-diferentes{
+    /* backdrop-filter: blur(15px); */
+    /* background:linear-gradient(to right bottom, rgba(122,49,236, 20%), rgba(47,7,109,83%));
+    border-radius: 8px; */
+    /* border: #FD4255 solid 2px; */
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    padding-top: 27px;
+    padding-bottom: 50px;
+
+    height: 300px;
+   }
+   main .time-flex .jogos-killjoy .border-grid .jogos-diferentes .joystick{
+    width: 97px;
+    height: 97px;
+
+   }
+
+   main .time-flex .jogos-killjoy .border-grid .jogos-diferentes h2{
+    color: #ffffff;
+    font-family: Paulo-Black;
+    text-transform: uppercase;
+    font-size: 18px;
+
+
+    }
+
+
+
+
+
 }
 
+
+
+/********************Computador*****************/
 @media screen and (min-width:675px) {
 
     /* Header */
     header {
-        position: fixed;
+        /* position: fixed;
         top: 0;
-        left: 0;
-        z-index: 20;
+        left: 0; */
+        position: initial;
         width: 100vw;
         height: 140px;
         background-color: #1B1426;
@@ -225,7 +394,7 @@ body {
     /* Voltando para o Header */
 
     header .header-bottom {
-        border: green 2px solid;
+        /* border: green 2px solid; */
         height: 86px;
 
         display: flex;
@@ -254,17 +423,64 @@ body {
 
     }
 
+    .header-bottom .menu-usuarios {
+        display: flex;
+        gap: 25px;
+    }
+
     /* Main */
 
     /* Banner */
-    .banner {
+    
+
+    main .banner {
         width: 100%;
         height: 606px;
         background-color: rebeccapurple;
         background-image: url(../assets/images/Banner\ -\ Imagem.png);
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
-        background-position: bottom;
+        background-position: center;
+   }
+
+   .banner .mediador{
+    /* border: #6200ff 2px solid; */
+
+    padding-top:40px ;
+    padding-bottom: 90px;
+
+    display: flex;
+    justify-content:space-between;
+    flex-direction: column;
+    align-items: center;
+    
+   }
+
+   main .banner .mediador h1{
+    color: #ffffff;
+    /* font-weight: black; */
+    font-size: 80px;
+    font-family: "Paulo-black";
+    text-shadow: 0px 0px 7px #FD4255;
+    text-decoration:dashed;
+
+   }
+
+   main .banner .botao-sobre{
+    width: 203px;
+    height: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #1B1426;
+    font-size: 24px;
+    font-family: "Paulo-semibold";
+    text-decoration: none;
+
+    background-color: #F9AA01;
+    border-radius: 8px;
    }
 
 }
