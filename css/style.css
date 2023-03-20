@@ -521,18 +521,25 @@ body {
     }
 
     /* Adcionando a barrinha pra listar os links */
+    footer li{
+        width: 110px;
+    }
+
     li::before{
         content: url(../assets/icons/linha.svg);
+       
     }
 
     ul{
         list-style-type: none;
+
+        display: flex;
+        flex-wrap: wrap;
     }
 
     .link-uteis #tamanho{
         display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
+        flex-wrap: wrap;
 
         /* border: #FD4255 2px solid; */
 
@@ -581,6 +588,18 @@ body {
         background: linear-gradient( to right, rgba(255,255,255,0.8), rgba(255,255,255,0.3));
         border-radius: 8px;
         color: white;
+        border: none;
+    }
+
+    .newsletter .input::placeholder{
+        color: white;
+    }
+
+    .newsletter .border-grid-2{
+        background:linear-gradient(to right bottom, rgba(239,239,239,30%), rgba(239,239,239,10%)) ;
+        backdrop-filter: blur(4px);
+        padding-left: 1px;
+        border-radius: 8px;
     }
 
     .newsletter button{
@@ -593,6 +612,24 @@ body {
         font-family: Paulo-bold;
         font-size: 24px;
     }
+
+    footer .back-top{
+        /* border: #7A31EC 2px solid; */
+
+        padding-bottom: 40px;
+
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    footer .copyright{
+        display: flex;
+        justify-content: center;
+
+        padding-bottom: 10px;
+    }
+
+    
 }
 
 
@@ -759,5 +796,178 @@ body {
     background-color: #F9AA01;
     border-radius: 8px;
    }
+
+   /* **Jogos----Main----Mais-sobre** */
+
+   main .jogos{
+    background-color: #1B1426;
+   }
+
+   main .jogos .jogos-flex{
+
+    /* border:#7A31EC 2px solid; */
+    
+    padding-top: 44px;
+    padding-bottom: 111px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 44px;
+   }
+
+   #size{
+    width: 556px;
+    height: 313px;
+   }
+
+
+   /* ****time--main--jink e kiljoy**** */
+     /* Configuração para diminuir a borda do titulo*/ 
+
+    main #border-space {
+    width: 100%;
+    
+    /* border: #FD4255 2px solid; */
+    display: flex;
+    justify-content: center;
+    }
+   
+   main .time{
+    background-color: #F9AA01;
+
+   }
+
+   main .time .time-flex{
+    /* border:#FD4255 2px solid; */
+
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    
+   }
+
+   main .time .time-flex h1{
+    color: #1B1426;
+    font-family: Paulo-black;
+    font-size: 40px;
+    text-transform: uppercase;
+    
+
+    border-bottom: #1B1426 solid 1px;
+    padding-bottom: 40px;
+    padding-top: 82px;
+   }
+
+   main .time-flex .jogos-killjoy{
+    /* border: #FD4255 solid 2px; */
+    margin-top: 127px;
+   }
+
+   /* Acrescentando um Linder-grid dos tanto tanto  */
+   main .time-flex .jogos-killjoy .border-grid{
+    background:linear-gradient(to right bottom, rgba(255,255,255,50%), rgba(27,20,28,0%)) ;
+    backdrop-filter: blur(4px);
+    padding: 1px;
+    border-radius: 8px;
+    height: 300px;
+    width: 231px;
+
+    position: relative;
+    right: -80px;
+    top: -400px;
+   }
+
+   main .time-flex .border-grid .background-color{
+    background:linear-gradient(to right bottom, rgba(122,49,236, 30%), rgba(47,7,109,83%));
+    border-radius: 8px;
+    height: 300px;
+    width: 231px;
+   }
+
+   main .time-flex .jogos-killjoy .border-grid .jogos-diferentes{
+    /* backdrop-filter: blur(15px); */
+    /* background:linear-gradient(to right bottom, rgba(122,49,236, 20%), rgba(47,7,109,83%));
+    border-radius: 8px; */
+    /* border: #FD4255 solid 2px; */
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    padding-top: 27px;
+    padding-bottom: 50px;
+
+    height: 300px;
+   }
+   main .time-flex .jogos-killjoy .border-grid .jogos-diferentes .joystick{
+    width: 97px;
+    height: 97px;
+
+   }
+
+   main .time-flex .jogos-killjoy .border-grid .jogos-diferentes h2{
+    color: #ffffff;
+    font-family: Paulo-Black;
+    text-transform: uppercase;
+    font-size: 18px;
+    text-shadow: 0px 0px 10px #7A31EC;
+
+    }
+
+    main .time-flex .jogos-killjoy .border-grid .jogos-diferentes p{
+
+    color: #ffffff;
+    font-family: Lucas-semiBold;
+    font-size: 13px;
+    }
+
+    main .time-flex .jinx{
+        /* border: 2px solid #FD4255; */
+
+        position: relative;
+        top: -140px;
+       
+    }    
+
+    main .time-flex .jogos-jinx .border-grid{
+        background:linear-gradient(to right bottom, rgba(255,255,255,50%), rgba(27,20,28,0%)) ;
+        backdrop-filter: blur(4px);
+        padding: 1px;
+        border-radius: 8px;
+        height: 300px;
+        width: 231px;
+
+        position: relative;
+        top: -445px;
+    }
+
+    main .jogos-jinx .professores{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+        padding-top: 27px;
+        padding-bottom: 50px;
+
+        height: 300px;
+    }
+
+    main .jogos-jinx .professores h2{
+        color: #ffffff;
+        font-family: Paulo-Black;
+        text-transform: uppercase;
+        font-size: 18px;
+        text-shadow: 0px 0px 10px #7A31EC;
+    }
+
+    main .jogos-jinx .professores p{
+        color: #ffffff;
+        font-family: Lucas-semiBold;
+        font-size: 13px;
+    }
 
 }
