@@ -629,7 +629,15 @@ body {
         padding-bottom: 10px;
     }
 
+    footer .cima{
+        display: flex;
+        justify-content: flex-end;
+    }
     
+    footer #copyright{
+        display: flex;
+        justify-content: center;
+    }
 }
 
 
