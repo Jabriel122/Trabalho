@@ -280,7 +280,7 @@ body {
 
     .table{
         padding-top: 105px;
-        border: red 2px solid;
+        /* border: red 2px solid; */
 
         display: flex;
         flex-direction: column;
@@ -295,8 +295,8 @@ body {
 
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        width: 358px;
+        /* justify-content: space-between; */
+        /* width: 358px; */
     }
 
     thead tr{
@@ -305,12 +305,11 @@ body {
         display: flex; 
         justify-content: space-between;
         padding-left: 10px; 
-        padding-right: 40px;
-    
+        padding-right: 100px;
     }
 
     tbody tr{
-        border-bottom: #F9AA01 2px solid;
+        /* border-bottom: #F9AA01 2px solid; */
         /* border-right: #F9AA01 2px solid; */
         display: flex; 
         justify-content: space-between;
@@ -328,7 +327,16 @@ body {
     }
 
     table tbody td{
-        border-right: 2px solid green;
+        border-right: #F9AA01 2px solid;
+        /* border: #1B1426 2px solid ; */
+
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        padding-left: 10px; 
+        padding-right: 30px;
 
     }
 
@@ -338,7 +346,10 @@ body {
 
 
 
+    tbody tr .input-2{
+        background: linear-gradient(to right bottom, rgba(27, 20, 38, 100%), rgba(60, 3, 65, 20%));
 
+    }
 
 
 
