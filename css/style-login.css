@@ -66,6 +66,13 @@ body {
     align-items: center;
 }
 
+/* main .box-login {
+    border: #F9AA01 2px solid;
+
+    width: 335px;
+    height: 459px;
+
+} */
 
 /*********************** Mobile First***********************/
 @media screen and (max-width: 675px) {
@@ -178,7 +185,7 @@ body {
 
     /************** Main ************/
 
-    main .wallpeper{
+    main .wallpeper {
         background-image: url(../assets/images/Wallpaper-login.png);
 
         /* display: flex;
@@ -187,26 +194,93 @@ body {
         padding-top: 102px;
         padding-bottom: 120px;
     }
-    
 
-    main .box-login{
-        border: #F9AA01 2px solid;
+
+    .box-login {
+        /* border: #F9AA01 2px solid; */
+
+        background: linear-gradient(to right bottom, rgba(27,20,38,100%), rgba(60,3,65,20%));
+        /* background-image: url(../assets/images/Wallpaper-login.png);
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+     */
 
         width: 335px;
         height: 459px;
-        
-        display: flex;  
-        justify-content: center;
+        border-radius: 8px;
+
+    }
+
+    .border-grid-3 {
+        background: linear-gradient(to right, rgba(255, 255, 255, 70%), rgba(255, 255, 255, 0%));
+        backdrop-filter: blur(4px);
+        padding-left: 1px;
+        padding-top: 2px;
+
+        width: 335px;
+        height: 459px;
+        border-radius: 8px;
+    }
+    
+    main .login-flex{
+        display: flex;
+        justify-content: space-evenly;
         /* align-items:center; */
         flex-direction: column;
+
+    }
+
+    main .login {
+        /* border: #F9AA01 2px solid; */
+
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    main .login h1 {
+        text-transform: uppercase;
+    }
+
+    main .arrumando {
+        padding-right: 10px;
+        /* padding-bottom: 5px; */
+        padding-left: 10px;
+        position: relative;
+        bottom: -5px;
+
+        height: 37px;
+        width: 26px;
+        /* border: green 3px solid; */
+    }
+
+    main .out {
+        border: none;
+
+        background: linear-gradient(to right, rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0));
+        /* backdrop-filter: blur(4px); */
+        
+        height: 100%;
+        width: 250px;
         
     }
 
-    main .input{
-        border: #F9AA01 2px solid;
-
+    main .out::placeholder{
+        color: white;
     }
 
+    main .login-flex button {
+        background-color: #F9AA01;
+        height: 40px;
+        width: 100%;
+
+        border-radius: 8px;
+        border: none;
+
+        font-family: Paulo-bold;
+        font-size: 24px;
+    }
 
 
 
@@ -380,18 +454,20 @@ body {
         width: 100%;
 
 
-        background: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.3));
+        background: linear-gradient(to right, rgba(239, 239, 239, 0.4), rgba(239, 239, 239, 0.0));
         border-radius: 8px;
+        backdrop-filter: blur(10px);
         color: white;
         border: none;
+
     }
 
     .input::placeholder {
         color: white;
     }
 
-    .newsletter .border-grid-2 {
-        background: linear-gradient(to right bottom, rgba(239, 239, 239, 30%), rgba(239, 239, 239, 10%));
+    .border-grid-2 {
+        background: linear-gradient(to right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
         backdrop-filter: blur(4px);
         padding-left: 1px;
         border-radius: 8px;
@@ -403,6 +479,7 @@ body {
         width: 100%;
 
         border-radius: 8px;
+        border: none;
 
         font-family: Paulo-bold;
         font-size: 24px;
