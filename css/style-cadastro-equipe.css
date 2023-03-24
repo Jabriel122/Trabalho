@@ -181,7 +181,9 @@ body {
 
     main .wallpeper {
         background-image: url(../assets/images/wallpaper-cadastrodeequipe.png);
-
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
         /* display: flex;
         justify-content: center;
         align-items: center; */
@@ -327,7 +329,7 @@ body {
 
     table tbody td{
         border-right: 2px solid green;
-        
+
     }
 
     table tbody td:last-of-type{
